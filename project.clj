@@ -1,8 +1,8 @@
-(defproject react-redux-es6-reagent "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+(defproject react-redux-reagent "0.1.0-SNAPSHOT"
+  :description "Code from Pluralsight course, 'Building Applications with React and Redux with ES6' - in ClojureScript."
   :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT License"
+            :url "https://opensource.org/licenses/MIT"}
 
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
                  [org.clojure/clojurescript "1.9.495" :scope "provided"]
@@ -28,7 +28,7 @@
   :cljsbuild {:builds {:app
                        {:source-paths ["src" "env/dev/cljs"]
                         :compiler
-                        {:main "react-redux-es6-reagent.dev"
+                        {:main "react-redux.dev"
                          :output-to "public/js/app.js"
                          :output-dir "public/js/out"
                          :asset-path   "js/out"

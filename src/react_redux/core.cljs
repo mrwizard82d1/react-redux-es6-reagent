@@ -1,4 +1,4 @@
-(ns react-redux-es6-reagent.core
+(ns react-redux.core
     (:require [reagent.core :as reagent]))
 
 ;; -------------------------

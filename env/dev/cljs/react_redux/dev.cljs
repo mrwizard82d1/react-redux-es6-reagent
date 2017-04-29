@@ -1,5 +1,5 @@
-(ns ^:figwheel-no-load react-redux-es6-reagent.dev
-  (:require [react-redux-es6-reagent.core :as core]
+(ns ^:figwheel-no-load react-redux.dev
+  (:require [react-redux.core :as core]
             [figwheel.client :as figwheel :include-macros true]))
 
 (enable-console-print!)

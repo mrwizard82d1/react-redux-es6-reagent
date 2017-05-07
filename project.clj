@@ -47,10 +47,7 @@
                          :output-dir "public/js/release"
                          :asset-path   "js/out"
                          :optimizations :advanced
-                         :pretty-print false}}}
-              :figwheel {
-                         ; Add server level configuration here
-                         :css-dirs ["css"]}}
+                         :pretty-print false}}}}
 
   :aliases {"release" ["do" "clean" ["cljsbuild" "once" "release"]]}
 

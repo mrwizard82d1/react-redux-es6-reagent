@@ -13,7 +13,9 @@
    [:p "This application uses ClojureScript, Secretary and other helpful libraries."]])
 
 (defn header []
-   [:p "Header here..."])
+  [:div
+   [:a {:href "/"} "Home"]
+   [:a {:href "/about"} "About"]])
 
 (defn app []
   [:div {:class "container-fluid"}

@@ -18,6 +18,9 @@
 (secretary/defroute "/about" []
   (session/put! :current-page #'components/about-page))
 
+(secretary/defroute "*" []
+  (session/put! :current-page #'components/home-page))
+
 ;; -------------------------
 ;; Initialize app
 

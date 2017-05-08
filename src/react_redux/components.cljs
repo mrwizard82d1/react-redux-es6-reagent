@@ -13,6 +13,10 @@
   [:div [:h1 "About"]
    [:p "This application uses ClojureScript, Secretary and other helpful libraries."]])
 
+(defn courses []
+  [:div [:h1 "Courses"
+         [:t]]])
+
 (defn active-page-styling [for-page]
   (if (= (session/get :current-page) for-page)
     {:class "active"}))
@@ -20,6 +24,8 @@
 (defn header []
   [:div
    [:a (merge {:href "/"} (active-page-styling #'home)) "Home"]
+   " | "
+   [:a (merge {:href "/courses"} (active-page-styling #'courses)) "Courses"]
    " | "
    [:a (merge {:href "/about"} (active-page-styling #'about)) "About"]])
 
@@ -30,4 +36,5 @@
    [(session/get :current-page)]])
 
 (def component {:home #'home
+                :courses #'courses
                 :about #'about})

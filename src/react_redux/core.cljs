@@ -5,6 +5,8 @@
               [accountant.core :as accountant]
               [react-redux.components :as components]))
 
+(enable-console-print!)
+
 ;; Current page
 (defn current-page []
   [:div {:class "container-fluid"}

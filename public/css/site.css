@@ -37,6 +37,10 @@ a {
   color: #09f;
 }
 
+a.active {
+    color: orange;
+}
+
 a:hover {
   text-decoration: underline;
 }
